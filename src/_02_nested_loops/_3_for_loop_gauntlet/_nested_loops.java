@@ -62,11 +62,15 @@ public class _nested_loops {
 		}
 		System.out.println();
 		
-		for (int r = 1; r < 10;) {
+		int count = 1; 
+		
+		for (int r = 1; r <= 3; r++) {
 			
-			System.out.println(r + " " + r + 1 + " " + r + 2);
-			r = r + 3;
-			
+			for (int s = 1; s <= 3; s++) {
+				
+				System.out.println(count++);
+			}
+		System.out.println();
 		}
 	}
 
